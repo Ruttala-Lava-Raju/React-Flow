@@ -51,7 +51,7 @@ const rawData = {
     }
   };
 const data = rawData.properties;
-const displayName = Object.keys(data);
+const displayNames = Object.keys(data);
 const arrowHeadType = "arrowclosed";
 
 const elements = [{
@@ -64,7 +64,7 @@ const elements = [{
         {
             id: '1B',
             type: 'output',
-            data: {label: displayName[0]},
+            data: {label: displayNames[0]},
             position: { x: 500, y: 100 },
             targetPosition: 'left',
             },
@@ -78,7 +78,7 @@ const elements = [{
             {
                 id: "2B",
                 type: 'output',
-                data: { label: displayName[1]},
+                data: { label: displayNames[1]},
                 targetPosition: 'left',
                 position: { x: 500, y: 200 },
             },
@@ -92,7 +92,7 @@ const elements = [{
             {
                 id:'3B',
                 type: 'output',
-                data: {label: displayName[2]},
+                data: {label: displayNames[2]},
                 targetPosition: 'left',
                 position: {x: 500, y: 300},
             },
